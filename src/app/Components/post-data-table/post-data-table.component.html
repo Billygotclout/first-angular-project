@@ -1,0 +1,14 @@
+<form #post="ngForm" class="container mt-5" (ngSubmit)="createData(post.value)">
+    <div class="mb-3">
+      <label for="exampleInputtitle1" class="form-label">title</label>
+      <input type="text" class="form-control" id="exampleInputtitle1" aria-describedby="titleHelp" name="title" ngModel>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputbody1" class="form-label">body </label>
+      <input type="body" class="form-control" id="exampleInputbody1" aria-describedby="bodyHelp" name="body" ngModel>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
